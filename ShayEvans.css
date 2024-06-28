@@ -1,6 +1,11 @@
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+}
+.background {
+  display: flex;
+  flex-direction: row;
 }
 .navbar {
   background-color: #03045e;
@@ -12,10 +17,17 @@ body {
 }
 
 #placeholder {
-  width: 30px;
-  height: 30px;
+  height: 100px;
+  width: 250px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+#backalign {
+  display: flex;
+  flex-direction: row;
 }
 li {
+  margin-top: 60px;
   list-style: none;
   display: inline-block;
 }
@@ -29,7 +41,9 @@ li a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 12em;
+  width: 100%;
+  max-width: min-content;
+  max-height: 890px;
 }
 #sidetext {
   height: 100%;
@@ -44,8 +58,111 @@ footer {
   display: flex;
   padding: 20px;
   margin-top: 0px;
-  background-color: #90e0ef;
+  background-color: #03045e;
   color: black;
   font-size: x-small;
-  height: 200px;
+  height: 100%;
+  padding-bottom: 100%;
+}
+#SpaceHome {
+  float: right;
+  height: 10em;
+  border-style: groove;
+  border-width: 10px;
+  border-color: burlywood;
+  margin: 20px;
+}
+
+pre {
+  flex: 1;
+  margin: inherit;
+  text-align: left;
+  color: rgb(251 192 235 / 91%);
+  font-size: -webkit-xxx-large;
+  font-family: monospace;
+  font-style: italic;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.ShayPicture {
+  float: left;
+  height: 10em;
+  border-style: groove;
+  border-width: 10px;
+  border-color: burlywood;
+  padding: 10px;
+  background-color: bisque;
+  margin: 20px;
+}
+.colpar {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(AboutBackground.webp);
+}
+#aboutme {
+  margin-left: 20px;
+  font-size: xx-large;
+  max-height: 890em;
+  color: rgb(251 192 235 / 91%);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  background-color: #0000004d;
+  margin-top: 0;
+  padding-top: 20px;
+}
+header {
+  margin-top: 60px;
+  padding-top: 10px;
+  color: #caf0f8;
+  font-family: "Courier New", Courier, monospace;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.box.red {
+  display: flex;
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+.animationunder {
+  display: flex;
+  flex-direction: column;
+}
+
+.box.red.show {
+  transform: translateX(0);
+}
+.scroll-wheel {
+  width: 300px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  overflow-y: scroll;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  border: 2px solid #ccc; /* Optional: add a border */
+  padding: 10px; /* Optional: add padding */
+}
+.playgame {
+  height: 50px;
+  width: 75px;
+  border-radius: 10px;
+  border-width: thick;
+  background-color: aquamarine;
+}
+.playgame:hover {
+  background-color: gold;
+  cursor: pointer;
+}
+.GameShow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.GameDescription {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: x-large;
+}
+.GameTitle {
+  font-family: math;
 }

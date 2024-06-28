@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="veiwport" content="width=device-width, intitial-scale=1" />
+    <title>Shay Evans | IT Professional</title>
+    <!--this code has reference to Coding Ninja but is not an exact copy-->
+    <link rel="stylesheet" href="ShayEvans.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a id="logoimg" href="index.html">
+          <img id="placeholder" src="Website logo.png" alt="placeholder" />
+        </a>
+      </div>
+      <header>Seeing the Design in Everything</header>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="backalign">
+      <nav class="sidebar">
+        <ul id="sidetext">
+          <li><a href="Projects1.html">Eat or Yeet Game</a></li>
+          <li><a href="Project2.html">To-Do List</a></li>
+          <li><a href="project3.html">Number Guessing Game</a></li>
+        </ul>
+      </nav>
+      <div class="animationunder">
+        <div class="imgandpaline">
+          <img src="background image.webp" alt="SpacePainting" id="SpaceHome" />
+          <p>
+            What does it mean to see the design in everything? It’s not just a
+            philosophical concept; it’s about appreciating the beauty in
+            everyday life. I believe that everything we know has been designed,
+            and all our designs are derived from existing ones. There are no
+            truly new ideas, just old ones reshaped into something different.
+            Consider this AI-generated photograph. It's a blend of countless
+            works by various artists, yet it emerges as an original piece. This
+            is what I love to do: creating new things from old designs and
+            drawing inspiration from everything around me. Ultimately, all
+            design can be traced back to God, the original designer. Taking
+            inspiration from Him is the most original approach one can take.
+          </p>
+        </div>
+        <h1>What am I Like? Scroll</h1>
+        <div class="scroll-wheel">
+          <div class="box red show">
+            <h2>content</h2>
+          </div>
+          <div class="box red">
+            <h2>content</h2>
+          </div>
+          <div class="box red">
+            <h2>content</h2>
+          </div>
+          <div class="box red">
+            <h2>content</h2>
+          </div>
+          <div class="box red">
+            <h2>content</h2>
+          </div>
+          <div class="box red">
+            <h2>content</h2>
+          </div>
+          <div class="box red">
+            <h2>content</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>ShayEvans 2024</footer>
+    <script>
+      const boxes = document.querySelectorAll(".box");
+      window.addEventListener("scroll", checkBoxes);
+
+      checkBoxes();
+
+      function checkBoxes() {
+        const triggerBottom = (window.innerHeight / 5) * 4;
+
+        boxes.forEach((box) => {
+          const boxTop = box.getBoundingClientRect().top;
+
+          if (boxTop < triggerBottom) {
+            box.classList.add("show");
+          } else {
+            box.classList.remove("show");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
