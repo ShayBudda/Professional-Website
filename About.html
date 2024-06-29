@@ -6,6 +6,9 @@
     <title>Shay Evans | IT Professional</title>
     <!--this code has reference to Coding Ninja but is not an exact copy-->
     <link rel="stylesheet" href="ShayEvans.css" />
+    <style>
+  
+    </style>
   </head>
   <body>
     <nav class="navbar">
@@ -14,7 +17,7 @@
           <img id="placeholder" src="Website logo.png" alt="placeholder" />
         </a>
       </div>
-      <header>Seeing the Design in Everything</header>
+      <header>About</header>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="About.html">About</a></li>
@@ -31,8 +34,9 @@
       </nav>
       <div class="animationunder">
         <div class="imgandpaline">
-          <img src="background image.webp" alt="SpacePainting" id="SpaceHome" />
-          <p>
+          <h1 class="thedesign">Seeing the Design in Everything</h1>
+          <img src="wonder.webp" alt="SpacePainting" id="SpaceHome" />
+          <p class ="scroll-wheel-1">
             What does it mean to see the design in everything? It’s not just a
             philosophical concept; it’s about appreciating the beauty in
             everyday life. I believe that everything we know has been designed,
@@ -46,52 +50,38 @@
             inspiration from Him is the most original approach one can take.
           </p>
         </div>
-        <h1>What am I Like? Scroll</h1>
-        <div class="scroll-wheel">
-          <div class="box red show">
-            <h2>content</h2>
+        <h1 class="AMhdr">What am I Like?</h1>
+        <div class="scroll-wheel-2">
+          <div class="SCelement">
+          <h1>Veteran</h1>
+          <p class="SCP">As a U.S. Army veteran, I am proud of my country and its values. Serving in the military has instilled in me a deep sense of patriotism and a commitment to the principles that make America great. The values of freedom, democracy, and justice are not just abstract concepts; they are the foundations upon which our nation stands. My experiences in the Army have taught me the importance of duty, honor, and sacrifice, and I carry these lessons with me every day. I believe in the strength and resilience of our nation and am dedicated to upholding the ideals that our forefathers fought for. Being a veteran means more than having served; it means continuing to serve my community and my country in any way I can, always striving to make a positive impact and to honor the legacy of those who have served before me.
+</p>
+</div>
+<div class="SCelement">
+  <h1>Church</h1>
+  <p class="SCP">Serving God is my number one priority, and this guiding principle influences every aspect of my life. It strengthens my resolve to live with integrity, compassion, and a sense of purpose. By putting God first, I am constantly reminded of the greater good and the importance of serving others selflessly. This spiritual foundation not only directs my actions but also enriches my daily experiences, infusing them with a sense of meaning and fulfillment.</p>
+</div>
+<div class="SCelement">
+<h1>Coding</h1>
+<p class="SCP">I am just starting in software development, and I am already finding it to be a highly rewarding and exciting field. The journey of learning to code opens up a world of possibilities, allowing me to create, innovate, and solve problems in ways I never imagined before. Each line of code is like a building block, contributing to the construction of something new and functional.
+
+  One of the most enjoyable aspects of coding is the sense of accomplishment that comes from solving complex problems. There's a unique satisfaction in debugging a piece of code, optimizing an algorithm, or developing a feature that works seamlessly. This process not only sharpens my analytical and logical thinking skills but also fosters a mindset of persistence and resilience.
+  
+  Additionally, software development is inherently creative. It allows me to bring my ideas to life, whether it's building a website, developing an app, or designing a game. The ability to turn abstract concepts into tangible, interactive experiences is incredibly fulfilling. The creativity involved in coding is boundless, and it continuously challenges me to think outside the box and explore new ways of approaching problems.</p>
+</div>
+<div class="SCelement">
+  <h1>Video Games</h1>
+  <p class="SCP">I have always enjoyed playing video games, and my passion for gaming has inspired me to pursue a career as a game developer. The immersive worlds, engaging stories, and creative challenges that video games offer have always captivated me, sparking my imagination and fueling my desire to create my own games. I love the idea of being able to craft interactive experiences that entertain, challenge, and inspire others. The prospect of combining my love for storytelling, art, and technology into a single discipline is incredibly exciting. Becoming a game developer would allow me to bring my ideas to life, create memorable experiences for players, and contribute to an industry that has given me so much joy and inspiration over the years.</p>
+</div>
           </div>
-          <div class="box red">
-            <h2>content</h2>
-          </div>
-          <div class="box red">
-            <h2>content</h2>
-          </div>
-          <div class="box red">
-            <h2>content</h2>
-          </div>
-          <div class="box red">
-            <h2>content</h2>
-          </div>
-          <div class="box red">
-            <h2>content</h2>
-          </div>
-          <div class="box red">
-            <h2>content</h2>
           </div>
         </div>
       </div>
     </div>
-    <footer>ShayEvans 2024</footer>
+    <footer> <img src="linkedin.png" alt="linkedin" id="linkedin" onclick="location.href='https://linkedin.com/in/shay-evans-it-professional';">
+      <p>Shay Evans 2024</p>
+      <img src="github.png" alt="github" id="github" onclick="location.href= 'https://github.com/ShayBudda';"></footer>
     <script>
-      const boxes = document.querySelectorAll(".box");
-      window.addEventListener("scroll", checkBoxes);
-
-      checkBoxes();
-
-      function checkBoxes() {
-        const triggerBottom = (window.innerHeight / 5) * 4;
-
-        boxes.forEach((box) => {
-          const boxTop = box.getBoundingClientRect().top;
-
-          if (boxTop < triggerBottom) {
-            box.classList.add("show");
-          } else {
-            box.classList.remove("show");
-          }
-        });
-      }
     </script>
   </body>
 </html>
